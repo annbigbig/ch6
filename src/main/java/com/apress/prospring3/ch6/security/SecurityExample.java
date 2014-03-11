@@ -17,8 +17,8 @@ public class SecurityExample {
         // get the bean
         SecureBean bean = getSecureBean();
 
-        // try as clarence
-        mgr.login("clarence", "pwd");
+        // try as annbigbig
+        mgr.login("annbigbig", "pwd");
         bean.writeSecureMessage();
         mgr.logout();
         
