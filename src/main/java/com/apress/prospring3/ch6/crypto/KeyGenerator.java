@@ -17,6 +17,7 @@ public class KeyGenerator {
     
     public long getKey() {
         int x = rand.nextInt(3);
+        //System.out.println("x=" + x);
         
         if(x == 1) {
             return WEAK_KEY;
