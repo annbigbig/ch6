@@ -20,7 +20,7 @@ public class ProfilingInterceptor implements MethodInterceptor {
         sw.start(invocation.getMethod().getName());
 
         Object returnValue = invocation.proceed();
-
+        
         sw.stop();
         dumpInfo(invocation, sw.getTotalTimeMillis());
         return returnValue;

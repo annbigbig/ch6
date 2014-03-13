@@ -49,6 +49,7 @@ public class ProxyPerfTest {
     
     private static void runJdkTests(Advisor advisor, ISimpleBean target) {
         ProxyFactory pf = new ProxyFactory();
+        //pf.setProxyTargetClass(false);	//預設值就是false，不用再多寫這一行，多了塊餘
         pf.setTarget(target);
         pf.addAdvisor(advisor);
         pf.setInterfaces(new Class[]{ISimpleBean.class});
